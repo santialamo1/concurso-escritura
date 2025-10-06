@@ -2,21 +2,22 @@ import { Link } from "react-router-dom";
 import TopRolMasters from "../components/TopRolMasters";
 import VotingResultsTable from "../components/VotingResultsTable";
 
+/* Sección: Menú principal con scroll seccionado */
 export default function MainMenu() {
   return (
     <main className="h-screen w-full overflow-y-scroll scroll-smooth snap-y snap-mandatory">
-      {/* Hero Section */}
+      {/* Sección: Hero */}
       <section
         id="hero"
-        className="relative min-h-screen snap-start flex flex-col justify-center items-center gap-6 p-8 bg-[url('/fondo-hero.png')] bg-cover bg-center text-parchment text-yellow-600"
+        className="relative min-h-screen snap-start flex flex-col justify-center items-center gap-6 px-4 sm:px-8 py-8 bg-[url('/fondo-hero.png')] bg-cover bg-center text-parchment text-yellow-600"
       >
         <div className="absolute inset-0 bg-black opacity-40 z-0" />
         <div className="relative z-10 flex flex-col items-center gap-6">
-          <h1 className="text-8xl font-bold text-center drop-shadow-lg text-shadow-black text-shadow-lg">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-center drop-shadow-lg text-shadow-black text-shadow-lg">
             Concurso de Escritura ImperiumAO
           </h1>
 
-          <p className="text-center max-w-2xl text-2xl text-shadow-black text-shadow-sm">
+          <p className="text-center max-w-xl sm:max-w-2xl text-base sm:text-xl md:text-2xl text-shadow-black text-shadow-sm">
             Bienvenido al concurso de escritura. Aquí podrás ver los puntajes de
             los RM, votar por tu favorito y explorar los resultados del evento.
           </p>
@@ -29,9 +30,9 @@ export default function MainMenu() {
       {/* Sección: Ganadores por puntuación */}
       <section
         id="rolmasters"
-        className="min-h-screen snap-start flex flex-col items-center justify-center gap-16 p-8 bg-[url('/wood.png')] bg-cover bg-center bg-no-repeat"
+        className="min-h-screen snap-start flex flex-col items-center justify-center gap-10 sm:gap-16 px-4 sm:px-8 py-8 bg-[url('/wood.png')] bg-cover bg-center bg-no-repeat"
       >
-        <h2 className="text-6xl font-bold drop-shadow-sm text-center tracking-wide text-stone-100 text-shadow-black text-shadow-lg">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold drop-shadow-sm text-center tracking-wide text-stone-100 text-shadow-black text-shadow-lg">
           🏆 Ganadores por puntuación
         </h2>
 
@@ -41,7 +42,7 @@ export default function MainMenu() {
           <img
             src="/calificaciones.svg"
             alt="Ver todas las calificaciones"
-            className="w-[320px] hover:scale-105 transition-transform duration-300"
+            className="w-[220px] sm:w-[280px] md:w-[320px] hover:scale-105 transition-transform duration-300"
           />
         </Link>
       </section>
@@ -52,13 +53,13 @@ export default function MainMenu() {
       {/* Sección: Campeón del Pueblo */}
       <section
         id="campeon"
-        className="min-h-screen snap-start flex flex-col items-center justify-center gap-10 px-8 py-16 bg-[url('/champion-bg.png')] bg-cover bg-center text-amber-100"
+        className="min-h-screen snap-start flex flex-col items-center justify-center gap-8 sm:gap-10 px-4 sm:px-8 py-12 sm:py-16 bg-[url('/champion-bg.png')] bg-cover bg-center text-amber-100"
       >
-        <h2 className="text-6xl font-bold drop-shadow-lg text-center tracking-wide text-shadow-black text-shadow-lg">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold drop-shadow-lg text-center tracking-wide text-shadow-black text-shadow-lg">
           👑 Campeón del Pueblo
         </h2>
 
-        <p className="text-center max-w-2xl text-xl leading-relaxed drop-shadow-md">
+        <p className="text-center max-w-xl sm:max-w-2xl text-base sm:text-lg md:text-xl leading-relaxed drop-shadow-md">
           El pueblo ha hablado. Aquí están los resultados de la votación
           popular.
         </p>
@@ -72,7 +73,7 @@ export default function MainMenu() {
           <img
             src="/vota-ganador.svg"
             alt="Votar por el ganador del pueblo"
-            className="w-[320px] hover:scale-105 transition-transform duration-300"
+            className="w-[220px] sm:w-[280px] md:w-[320px] hover:scale-105 transition-transform duration-300"
           />
         </a>
       </section>
