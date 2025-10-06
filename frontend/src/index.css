@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+/* 🧱 Variables de color */
+:root {
+  --parchment: #fdf6e3;
+  --brown: #5c3a21;
+  --gold: #c4a000;
+  --gray-medieval: #6e6e6e;
+  --leather: #e0c097;
+}
+
+/* 🖋️ Tipografía base */
+body {
+  font-family: "Grenze", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-on-wood {
+  color: #fdf6e3; /* parchment claro */
+}
+
+.separador {
+  background-image: url('/separador.png');
+  background-position: top;
+  background-size: cover;
+  height: 120px;
+}
